@@ -1,0 +1,284 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        /* Navigation */
+        .navbar-brand {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            text-transform: uppercase;
+            font-weight: 200;
+            letter-spacing: 0.5rem;
+        }
+
+        /* Div paragraph */
+
+        div p {
+            text-align: justify;
+        }
+
+        /* Hero Section */
+        .Hero {
+            width: 100%;
+            min-height: 60vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+
+
+        .Hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            color: #1f1f1f;
+            text-transform: capitalize;
+            font-size: 2.3rem;
+            
+        }
+
+        /* About Section */
+        h3 {
+             width: 100%; 
+             text-align: center; 
+             border-bottom: 1px solid #1f1f1f46; 
+             line-height: 0.6em;
+             margin: 60px 0 60px; 
+             font-weight: 400;
+             text-transform: uppercase;
+             letter-spacing: 5px;
+             font-size: 1.2em;
+        }
+
+        h3 span {
+            background: #fff;
+            padding: 1.3rem;
+            width: 30%;
+            
+        }
+
+        .about-me {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Cards */
+        .card {
+            width: 80%;
+            max-width: 20rem;
+            margin: 0 auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            margin-top: 4rem;
+        }
+        
+        .detail-info {
+            list-style: none;
+    
+        }
+
+        .details a {
+            text-decoration: none;
+        }
+
+
+
+        /* Fix Bootstrap Container Overflow */
+
+        .container, .container-fluid {
+            max-width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        [class*="col-"] {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        /* Media Queries */
+        
+        /* Extra Small Devices (phones, less than 576px) */
+
+        @media (max-width: 575.98px) {
+            .Hero {
+                min-height: 400px;
+            }
+
+            .header {
+                font-size: 1.75rem !important;
+                padding: 1rem !important;
+            }
+
+            .about-me {
+                font-size: 0.95rem;
+                padding: 0 0.5rem;
+            }
+
+            .card {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            footer .nav {
+                justify-content: center !important;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer p {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Small Devices (landscape phones, 576px and up) */
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .Hero {
+                min-height: 450px;
+            }
+
+            .header {
+                font-size: 2rem !important;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+
+        /* Medium Devices (tablets, 768px and up) */
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .Hero {
+                min-height: 500px;
+            }
+
+            .header {
+                font-size: 2.5rem !important;
+            }
+
+            .card {
+                max-width: 18rem;
+            }
+
+            .about-me {
+                padding: 0 1rem;
+            }
+        }
+
+        /* Large Devices (desktops, 992px and up) */
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+
+            body {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;  
+            }
+
+            
+            
+
+            .Hero {
+                min-height: 550px;
+            }
+
+            .container.col-lg-8 {
+                max-width: 80%;
+            }
+
+            .card {
+                max-width: 19rem;
+            }
+
+        
+        }
+
+        /* Extra Large Devices (large desktops, 1200px and up) */
+
+        @media (min-width: 1200px) {
+            .Hero {
+                min-height: 600px;
+            }
+
+            .container.col-lg-8 {
+                max-width: 70%;
+            }
+        }
+
+        /* Landscape Orientation */
+
+        @media (max-width: 767.98px) and (orientation: landscape) {
+            .Hero {
+                min-height: 350px;
+            }
+
+            .header {
+                font-size: 1.5rem !important;
+                padding: 0.5rem !important;
+            }
+        }
+
+        /* Fix for very small screens */
+        
+        @media (max-width: 320px) {
+            .header {
+                font-size: 1.5rem !important;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            .about-me {
+                font-size: 0.9rem;
+            }
+        }
